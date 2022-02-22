@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Temperature Conversion</title>
+</head>
+    <body>
+        <h1>Temperature Conversion</h1>
+        <form action = "/" method = "post">
+            <p>Enter the temperature:</p>
+            <p>
+                <input type = "radio" name = "rd" value = "F" id = "fad"> Fahrenheit
+                <input type = "radio" name = "rd" value = "C" id = "cel"> Celsius
+                <input type = "number" name = "temp" >
+                <input type = "submit" value = "Convert" />
+            </p>
+        </form> 
+        <p>
+            Your converted tem of {{ temp }} in {{ curr }} is {{ converted_t }} in {{ dest }}.
+        </p>
+    </body>
+</html>
